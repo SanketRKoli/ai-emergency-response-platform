@@ -1,0 +1,377 @@
+{
+ "note": "Synthetic sample reports written and labelled by the project author. Small and not independent: results are indicative only.",
+ "reports": [
+  {
+   "id": 1,
+   "text": "There is smoke coming from the second floor of Block B and people are inside.",
+   "category": "Fire",
+   "priority": "High"
+  },
+  {
+   "id": 2,
+   "text": "Flames visible in the canteen kitchen, staff are running out.",
+   "category": "Fire",
+   "priority": "High"
+  },
+  {
+   "id": 3,
+   "text": "Small fire in the dustbin behind the library, minor, already mostly out.",
+   "category": "Fire",
+   "priority": "Medium"
+  },
+  {
+   "id": 4,
+   "text": "Something is burning near the electrical panel in the chemistry lab, strong smell of burning plastic.",
+   "category": "Fire",
+   "priority": "High"
+  },
+  {
+   "id": 5,
+   "text": "Sparks and a loud bang from the transformer near the hostel, now smoke is rising.",
+   "category": "Fire",
+   "priority": "High"
+  },
+  {
+   "id": 6,
+   "text": "Fire alarm is ringing in the admin block, I can smell smoke in the corridor.",
+   "category": "Fire",
+   "priority": "High"
+  },
+  {
+   "id": 7,
+   "text": "Kitchen gas cylinder is on fire, evacuate immediately!",
+   "category": "Fire",
+   "priority": "Critical"
+  },
+  {
+   "id": 8,
+   "text": "Bonfire for the cultural night near the ground got out of control and is spreading to the tent.",
+   "category": "Fire",
+   "priority": "High"
+  },
+  {
+   "id": 9,
+   "text": "Burnt smell coming from the AC in room 204, no flames.",
+   "category": "Fire",
+   "priority": "Medium"
+  },
+  {
+   "id": 10,
+   "text": "A student has fainted in the seminar hall and is not responding.",
+   "category": "Medical",
+   "priority": "Critical"
+  },
+  {
+   "id": 11,
+   "text": "Someone has chest pain and difficulty breathing near the gym entrance.",
+   "category": "Medical",
+   "priority": "Critical"
+  },
+  {
+   "id": 12,
+   "text": "My friend slipped on the wet floor and has a cut on his hand, bleeding a little.",
+   "category": "Medical",
+   "priority": "Medium"
+  },
+  {
+   "id": 13,
+   "text": "Girl in the library had an asthma attack, she has her inhaler but needs help.",
+   "category": "Medical",
+   "priority": "High"
+  },
+  {
+   "id": 14,
+   "text": "Student running a high fever and vomiting in hostel room 12.",
+   "category": "Medical",
+   "priority": "Medium"
+  },
+  {
+   "id": 15,
+   "text": "Snake bite near the football ground, a gardener was bitten on the leg.",
+   "category": "Medical",
+   "priority": "High"
+  },
+  {
+   "id": 16,
+   "text": "Teacher feeling dizzy and weak in the staff room, needs a doctor.",
+   "category": "Medical",
+   "priority": "Medium"
+  },
+  {
+   "id": 17,
+   "text": "He broke his arm while playing basketball, can't move it.",
+   "category": "Medical",
+   "priority": "High"
+  },
+  {
+   "id": 18,
+   "text": "Need an ambulance urgently at gate 2, someone collapsed.",
+   "category": "Medical",
+   "priority": "High"
+  },
+  {
+   "id": 19,
+   "text": "Student feeling anxious and crying after exam results, needs counselling.",
+   "category": "Medical",
+   "priority": "Medium"
+  },
+  {
+   "id": 20,
+   "text": "Two bikes collided at the main gate, one rider is lying on the road.",
+   "category": "Accident",
+   "priority": "High"
+  },
+  {
+   "id": 21,
+   "text": "A car hit the compound wall near the parking, nobody is hurt.",
+   "category": "Accident",
+   "priority": "Medium"
+  },
+  {
+   "id": 22,
+   "text": "Bus driver lost control and the bus rammed into a tree, students are injured.",
+   "category": "Accident",
+   "priority": "High"
+  },
+  {
+   "id": 23,
+   "text": "Scooter skidded on the wet road near the canteen, rider has a scraped knee.",
+   "category": "Accident",
+   "priority": "Medium"
+  },
+  {
+   "id": 24,
+   "text": "A truck delivering supplies hit a pedestrian at the back gate.",
+   "category": "Accident",
+   "priority": "High"
+  },
+  {
+   "id": 25,
+   "text": "Road accident just outside the college, an auto overturned.",
+   "category": "Accident",
+   "priority": "High"
+  },
+  {
+   "id": 26,
+   "text": "Fender bender in the staff parking lot, minor scratches on both cars.",
+   "category": "Accident",
+   "priority": "Low"
+  },
+  {
+   "id": 27,
+   "text": "Student fell from the stairs near the lab and cannot stand up.",
+   "category": "Medical",
+   "priority": "High"
+  },
+  {
+   "id": 28,
+   "text": "Cyclist was knocked down by a speeding bike near hostel road.",
+   "category": "Accident",
+   "priority": "High"
+  },
+  {
+   "id": 29,
+   "text": "Someone stole my laptop from the library desk while I was away.",
+   "category": "Security",
+   "priority": "Medium"
+  },
+  {
+   "id": 30,
+   "text": "Two groups of students are fighting near the canteen with sticks.",
+   "category": "Security",
+   "priority": "High"
+  },
+  {
+   "id": 31,
+   "text": "An unknown man is roaming around the girls hostel and looking into rooms.",
+   "category": "Security",
+   "priority": "High"
+  },
+  {
+   "id": 32,
+   "text": "I am being followed by a guy every evening after class, feeling unsafe.",
+   "category": "Security",
+   "priority": "High"
+  },
+  {
+   "id": 33,
+   "text": "Senior students are ragging first years in the hostel corridor.",
+   "category": "Security",
+   "priority": "High"
+  },
+  {
+   "id": 34,
+   "text": "A man with a knife is threatening people near the main gate.",
+   "category": "Security",
+   "priority": "Critical"
+  },
+  {
+   "id": 35,
+   "text": "My bike parked near gate 3 was stolen last night.",
+   "category": "Security",
+   "priority": "Medium"
+  },
+  {
+   "id": 36,
+   "text": "Lost child crying near the parking area, parents not found.",
+   "category": "Security",
+   "priority": "High"
+  },
+  {
+   "id": 37,
+   "text": "Someone is trying to break the lock of the principal's office door.",
+   "category": "Security",
+   "priority": "High"
+  },
+  {
+   "id": 38,
+   "text": "There is no electricity in the entire engineering block since morning.",
+   "category": "Infrastructure",
+   "priority": "Medium"
+  },
+  {
+   "id": 39,
+   "text": "Water pipe burst near the library entrance, water flooding the walkway.",
+   "category": "Infrastructure",
+   "priority": "Medium"
+  },
+  {
+   "id": 40,
+   "text": "A huge crack has appeared in the wall of the old hostel building and the ceiling is falling.",
+   "category": "Infrastructure",
+   "priority": "High"
+  },
+  {
+   "id": 41,
+   "text": "Big pothole on the road near the main gate damaging vehicles.",
+   "category": "Infrastructure",
+   "priority": "Medium"
+  },
+  {
+   "id": 42,
+   "text": "Live wire hanging from the electric pole after the storm, children play nearby.",
+   "category": "Infrastructure",
+   "priority": "Critical"
+  },
+  {
+   "id": 43,
+   "text": "Manhole open on the walkway near the cafeteria, someone could fall.",
+   "category": "Infrastructure",
+   "priority": "High"
+  },
+  {
+   "id": 44,
+   "text": "Sewage overflowing from the drain near the hostel mess, terrible smell.",
+   "category": "Infrastructure",
+   "priority": "Medium"
+  },
+  {
+   "id": 45,
+   "text": "Gas leak smell from the lab pipeline.",
+   "category": "Infrastructure",
+   "priority": "High"
+  },
+  {
+   "id": 46,
+   "text": "Campus wifi is down in all buildings.",
+   "category": "Infrastructure",
+   "priority": "Medium"
+  },
+  {
+   "id": 47,
+   "text": "The tube light in classroom 305 is not working.",
+   "category": "Maintenance",
+   "priority": "Low"
+  },
+  {
+   "id": 48,
+   "text": "Ceiling fan in lab 2 is making a loud noise and wobbling.",
+   "category": "Maintenance",
+   "priority": "Low"
+  },
+  {
+   "id": 49,
+   "text": "Washroom tap on the first floor is leaking continuously.",
+   "category": "Maintenance",
+   "priority": "Low"
+  },
+  {
+   "id": 50,
+   "text": "The projector in the seminar hall is broken, please repair before tomorrow's session.",
+   "category": "Maintenance",
+   "priority": "Low"
+  },
+  {
+   "id": 51,
+   "text": "Dustbins near the canteen are overflowing and it smells bad.",
+   "category": "Maintenance",
+   "priority": "Low"
+  },
+  {
+   "id": 52,
+   "text": "Lift in B block is stuck between floors with two people inside.",
+   "category": "Maintenance",
+   "priority": "High"
+  },
+  {
+   "id": 53,
+   "text": "Door lock of room 112 is jammed and I cannot open it.",
+   "category": "Maintenance",
+   "priority": "Low"
+  },
+  {
+   "id": 54,
+   "text": "Benches in the garden are broken and paint is peeling off.",
+   "category": "Maintenance",
+   "priority": "Low"
+  },
+  {
+   "id": 55,
+   "text": "The classroom is very dirty and needs cleaning before the exam.",
+   "category": "Maintenance",
+   "priority": "Low"
+  },
+  {
+   "id": 56,
+   "text": "Lost my ID card somewhere on campus, please help.",
+   "category": "Other",
+   "priority": "Low"
+  },
+  {
+   "id": 57,
+   "text": "Stray dogs are barking and gathering near the hostel gate.",
+   "category": "Other",
+   "priority": "Low"
+  },
+  {
+   "id": 58,
+   "text": "Loud music is being played in the next block after 11 pm.",
+   "category": "Other",
+   "priority": "Low"
+  },
+  {
+   "id": 59,
+   "text": "There is a bee hive on the tree near the parking lot, could be dangerous.",
+   "category": "Other",
+   "priority": "Medium"
+  },
+  {
+   "id": 60,
+   "text": "A group of monkeys entered the canteen and are snatching food.",
+   "category": "Other",
+   "priority": "Low"
+  },
+  {
+   "id": 61,
+   "text": "Please tell me whom to contact for a bonafide certificate.",
+   "category": "Other",
+   "priority": "Low"
+  },
+  {
+   "id": 62,
+   "text": "Wallet found near the stationery shop, handing it over to the office.",
+   "category": "Other",
+   "priority": "Low"
+  }
+ ]
+}

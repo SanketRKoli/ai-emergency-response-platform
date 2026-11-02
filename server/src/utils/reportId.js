@@ -8,7 +8,7 @@ export async function generateReportId() {
   const counter = await Counter.findOneAndUpdate(
     { _id: `incident-${year}` },
     { $inc: { seq: 1 } },
-    { new: true, upsert: true }
+    { returnDocument: 'after', upsert: true }
   );
   return formatReportId(year, counter.seq);
 }

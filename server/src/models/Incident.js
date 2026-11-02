@@ -17,6 +17,7 @@ const incidentSchema = new mongoose.Schema(
     aiReason: { type: String },
     aiConfidence: { type: Number, min: 0, max: 1 }, // only when the model gives a meaningful value
     aiStatus: { type: String, enum: AI_STATUSES, default: 'pending' },
+    aiMethod: { type: String }, // e.g. rules-v1, gemini:gemini-2.5-flash
 
     latitude: { type: Number, min: -90, max: 90 },
     longitude: { type: Number, min: -180, max: 180 },

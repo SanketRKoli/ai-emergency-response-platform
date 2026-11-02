@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import api, { errorMessage } from '../api/axios.js';
 import StatCards from '../components/StatCards.jsx';
 import StatusBadge from '../components/StatusBadge.jsx';
+import PriorityBadge from '../components/PriorityBadge.jsx';
 import Loader from '../components/Loader.jsx';
 import { useAuth } from '../context/AuthContext.jsx';
 
@@ -14,9 +15,16 @@ export default function UserDashboard() {
   const [data, setData] = useState(null);
   const [error, setError] = useState('');
 
+  const load = () => api.get('/incidents').then((res) => setData(res.data)).catch((err) => setError(errorMessage(err)));
+  useEffect(() => { load(); }, []);
+
+  // While any report is still being analysed by the AI, refresh the list every few seconds.
+  const analysing = data?.incidents.some((i) => ['pending', 'processing'].includes(i.aiStatus));
   useEffect(() => {
-    api.get('/incidents').then((res) => setData(res.data)).catch((err) => setError(errorMessage(err)));
-  }, []);
+    if (!analysing) return undefined;
+    const t = setTimeout(load, 4000);
+    return () => clearTimeout(t);
+  }, [analysing, data]);
 
   const s = data?.stats;
   return (
@@ -53,9 +61,9 @@ export default function UserDashboard() {
                 <tbody>
                   {data.incidents.map((i) => (
                     <tr key={i.id}>
-                      <td className="fw-semibold">{i.reportId}{i.isUrgent && <span className="badge text-bg-danger ms-2">Urgent</span>}</td>
-                      <td>{i.category || <span className="text-secondary">Awaiting AI</span>}</td>
-                      <td>{i.priority || <span className="text-secondary">-</span>}</td>
+                      <td className="fw-semibold"><Link to={`/incidents/${i.id}`}>{i.reportId}</Link>{i.isUrgent && <span className="badge text-bg-danger ms-2">Urgent</span>}</td>
+                      <td>{i.category || <span className="text-secondary">{i.aiStatus === 'failed' ? 'Manual review' : 'Analysing...'}</span>}</td>
+                      <td><PriorityBadge priority={i.priority} /></td>
                       <td>{where(i)}</td>
                       <td>{new Date(i.createdAt).toLocaleString('en-IN')}</td>
                       <td><StatusBadge status={i.status} /></td>
@@ -65,6 +73,7 @@ export default function UserDashboard() {
               </table>
             </div>
           )}
+        <div className="card-footer bg-white small text-secondary">AI-generated classification. Final priority should be verified by an authorized responder.</div>
       </div>
     </>
   );

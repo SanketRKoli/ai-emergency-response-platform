@@ -5,6 +5,7 @@ import Login from './pages/Login.jsx';
 import Register from './pages/Register.jsx';
 import UserDashboard from './pages/UserDashboard.jsx';
 import ReportIncident from './pages/ReportIncident.jsx';
+import IncidentDetails from './pages/IncidentDetails.jsx';
 import ResponderDashboard from './pages/ResponderDashboard.jsx';
 import AdminDashboard from './pages/AdminDashboard.jsx';
 import NotFound from './pages/NotFound.jsx';
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={<ProtectedRoute roles={['User']}><UserDashboard /></ProtectedRoute>} />
           <Route path="/report" element={<ProtectedRoute roles={['User']}><ReportIncident /></ProtectedRoute>} />
+          <Route path="/incidents/:id" element={<ProtectedRoute roles={['User', 'Responder', 'Admin']}><IncidentDetails /></ProtectedRoute>} />
           <Route path="/responder" element={<ProtectedRoute roles={['Responder']}><ResponderDashboard /></ProtectedRoute>} />
           <Route path="/admin" element={<ProtectedRoute roles={['Admin']}><AdminDashboard /></ProtectedRoute>} />
           <Route path="*" element={<NotFound />} />

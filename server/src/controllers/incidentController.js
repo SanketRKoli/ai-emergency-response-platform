@@ -12,6 +12,7 @@ import { parseIncidentInput } from '../utils/incidentInput.js';
 import { fileHasImageSignature } from '../utils/imageCheck.js';
 import { generateReportId } from '../utils/reportId.js';
 import { uploadsDir } from '../middleware/upload.js';
+import { processIncident } from '../services/incidentPipeline.js';
 
 const PENDING = ['Submitted', 'AI Analyzed', 'Pending Assignment', 'Assigned'];
 const IN_PROGRESS = ['Accepted', 'In Progress'];
@@ -28,6 +29,9 @@ const toClient = (i) => ({
   aiReason: i.aiReason,
   aiConfidence: i.aiConfidence,
   aiStatus: i.aiStatus,
+  aiMethod: i.aiMethod,
+  aiCategory: i.aiCategory,
+  aiPriority: i.aiPriority,
   latitude: i.latitude,
   longitude: i.longitude,
   locationDescription: i.locationDescription,
@@ -81,6 +85,8 @@ export const createIncident = asyncHandler(async (req, res) => {
       console.error('Could not write history/notification for', reportId, err.message);
     }
     res.status(201).json({ success: true, incident: toClient(incident) });
+    // The answer is already sent; AI analysis and routing continue in the background.
+    setImmediate(() => processIncident(incident._id).catch((e) => console.error('processIncident failed:', e.message)));
   } catch (err) {
     if (file) await fs.unlink(file.path).catch(() => {}); // do not keep files of rejected reports
     throw err;

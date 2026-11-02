@@ -5,5 +5,5 @@ export const RESPONDER_CATEGORIES = ['Fire', 'Medical', 'Security', 'Accident', 
 export const PRIORITIES = ['Low', 'Medium', 'High', 'Critical'];
 export const STATUSES = ['Submitted', 'AI Analyzed', 'Pending Assignment', 'Assigned', 'Accepted', 'In Progress', 'Resolved'];
 export const LOCATION_SOURCES = ['gps', 'map', 'manual'];
-export const AI_STATUSES = ['pending', 'completed', 'failed'];
+export const AI_STATUSES = ['pending', 'processing', 'completed', 'failed'];
 export const NOTIFICATION_TYPES = ['submitted', 'ai_done', 'assigned', 'accepted', 'status_changed', 'resolved', 'admin_alert', 'responder_alert'];

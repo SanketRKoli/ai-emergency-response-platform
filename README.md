@@ -6,10 +6,10 @@ AI-assisted classification and routing, responder handling and status tracking.
 ## Progress
 | Stage | Status |
 |---|---|
-| 1. Project setup (folders, env, MongoDB connection, 4 Mongoose models) | Code written. 16 database-free tests pass. Not yet verified against a real MongoDB |
-| 2. Authentication (register, login, JWT, hashing, roles, protected routes) | Code written. Validation and token rejection tested without a database. Register/login end to end NOT yet verified |
-| 3. Incident reporting (form, GPS / map / manual location, image upload, report IDs, live user dashboard) | Code written. 29 database-free tests pass. Needs checking in the browser against MongoDB |
-| 4. AI integration | Planned |
+| 1. Project setup (folders, env, MongoDB connection, 4 Mongoose models) | Done and verified (server connects to MongoDB Atlas) |
+| 2. Authentication (register, login, JWT, hashing, roles, protected routes) | Done and verified in the browser (register, login, roles) |
+| 3. Incident reporting (form, GPS / map / manual location, image upload, report IDs, live user dashboard) | Done and verified in the browser against MongoDB Atlas |
+| 4. AI classification and routing (rule baseline, optional Gemini/Claude adapters, validation, evaluation, incident details page) | Code written. 51 database-free tests pass. Needs checking in the browser against MongoDB |
 | 5. Responder module | Planned |
 | 6. User tracking and notifications | Planned |
 | 7. Admin dashboard and analytics | Planned |
@@ -73,6 +73,12 @@ npm run dev                 # app on http://localhost:5173
 | GET | /api/incidents/:id | Reporter, assigned Responder, Admin |
 | GET | /api/incidents/:id/image | Same as above (image is never public) |
 
+## AI classification (Stage 4)
+- After a report is saved, the server analyses it in the background: category, priority, summary and reason, then routes it to a responder group (status AI Analyzed, then Assigned or Pending Assignment).
+- `AI_PROVIDER=rules` (default) uses a **keyword-rule baseline, which is not machine learning**. `gemini` or `anthropic` call a language model; if it fails, the rules are used (set `AI_FALLBACK_TO_RULES=false` to leave the report for manual review instead).
+- AI output is validated by the server (only allowed categories and priorities are accepted). Only the report text is sent to a model, never the reporter's name or email.
+- `npm run evaluate` (in `server`) measures accuracy, precision, recall, F1 and a confusion matrix on the 62 labelled sample reports in `server/evaluation/dataset.json`. The set is small and written by the project author, so results are indicative only. Run `npm run evaluate -- --provider=gemini` to compare a language model.
+
 ## How to test this stage
 1. Register a new user: you land on the User dashboard.
 2. Logout, login as admin@demo.test: you land on the Admin dashboard.
@@ -81,5 +87,5 @@ npm run dev                 # app on http://localhost:5173
 5. In MongoDB, open the users collection: `passwordHash` is a bcrypt hash, never the plain password.
 
 ## Automated checks
-- `cd server && npm test` runs 29 tests that need no database (validation, token rejection, role check, error handling).
+- `cd server && npm test` runs 51 tests that need no database (validation, token rejection, role check, error handling).
 - GitHub Actions (`.github/workflows/ci.yml`) runs the backend tests and the frontend build on every push and pull request.
