@@ -9,8 +9,8 @@ AI-assisted classification and routing, responder handling and status tracking.
 | 1. Project setup (folders, env, MongoDB connection, 4 Mongoose models) | Done and verified (server connects to MongoDB Atlas) |
 | 2. Authentication (register, login, JWT, hashing, roles, protected routes) | Done and verified in the browser (register, login, roles) |
 | 3. Incident reporting (form, GPS / map / manual location, image upload, report IDs, live user dashboard) | Done and verified in the browser against MongoDB Atlas |
-| 4. AI classification and routing (rule baseline, optional Gemini/Claude adapters, validation, evaluation, incident details page) | Code written. 51 database-free tests pass. Needs checking in the browser against MongoDB |
-| 5. Responder module | Planned |
+| 4. AI classification and routing (rule baseline, optional Gemini/Claude adapters, validation, evaluation, incident details page) | Done and verified in the browser (report classified Fire / High and routed to the Fire group) |
+| 5. Responder module (group dashboard, accept, start response, notes, resolve) | Code written. 57 database-free tests pass. Needs checking in the browser |
 | 6. User tracking and notifications | Planned |
 | 7. Admin dashboard and analytics | Planned |
 | 8. Testing and deployment | Planned |
@@ -72,6 +72,10 @@ npm run dev                 # app on http://localhost:5173
 | GET | /api/incidents | User (own reports and dashboard numbers) |
 | GET | /api/incidents/:id | Reporter, assigned Responder, Admin |
 | GET | /api/incidents/:id/image | Same as above (image is never public) |
+| GET | /api/responder/incidents | Responder (their group and assigned incidents, dashboard numbers) |
+| PUT | /api/responder/incidents/:id/accept | Responder (first to accept wins) |
+| PUT | /api/responder/incidents/:id/status | Responder (In Progress, Resolved; Resolved needs a note) |
+| POST | /api/responder/incidents/:id/notes | Responder (own Accepted / In Progress incidents) |
 
 ## AI classification (Stage 4)
 - After a report is saved, the server analyses it in the background: category, priority, summary and reason, then routes it to a responder group (status AI Analyzed, then Assigned or Pending Assignment).
@@ -87,5 +91,5 @@ npm run dev                 # app on http://localhost:5173
 5. In MongoDB, open the users collection: `passwordHash` is a bcrypt hash, never the plain password.
 
 ## Automated checks
-- `cd server && npm test` runs 51 tests that need no database (validation, token rejection, role check, error handling).
+- `cd server && npm test` runs 57 tests that need no database (validation, token rejection, role check, error handling).
 - GitHub Actions (`.github/workflows/ci.yml`) runs the backend tests and the frontend build on every push and pull request.

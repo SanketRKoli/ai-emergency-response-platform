@@ -5,6 +5,7 @@ import Loader from '../components/Loader.jsx';
 import MapView from '../components/MapView.jsx';
 import StatusBadge from '../components/StatusBadge.jsx';
 import PriorityBadge from '../components/PriorityBadge.jsx';
+import ResponderPanel from '../components/ResponderPanel.jsx';
 import { useAuth, homeFor } from '../context/AuthContext.jsx';
 
 const methodLabel = (m) => {
@@ -20,6 +21,7 @@ export default function IncidentDetails() {
   const [incident, setIncident] = useState(null);
   const [error, setError] = useState('');
   const [imageUrl, setImageUrl] = useState('');
+  const [tick, setTick] = useState(0); // bump to reload after a responder action
 
   // Reload every few seconds while the AI analysis is still running.
   useEffect(() => {
@@ -34,7 +36,7 @@ export default function IncidentDetails() {
       .catch((err) => !stop && setError(errorMessage(err)));
     load();
     return () => { stop = true; clearTimeout(timer); };
-  }, [id]);
+  }, [id, tick]);
 
   // The photo needs the login token, so it is fetched through the API and shown from memory.
   useEffect(() => {
@@ -59,6 +61,8 @@ export default function IncidentDetails() {
         {i.isUrgent && <span className="badge text-bg-danger">Urgent</span>}
         <span className="text-secondary small ms-auto">{new Date(i.createdAt).toLocaleString('en-IN')}</span>
       </div>
+      {i.assignedResponderName && <div className="text-secondary small mb-3">Assigned responder: <strong>{i.assignedResponderName}</strong></div>}
+      {user.role === 'Responder' && <ResponderPanel incident={i} onChanged={() => setTick((t) => t + 1)} />}
 
       <div className="card shadow-sm mb-3"><div className="card-body">
         <div className="fw-semibold mb-1">Description</div>

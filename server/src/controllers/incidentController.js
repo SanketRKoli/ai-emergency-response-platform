@@ -18,7 +18,7 @@ const PENDING = ['Submitted', 'AI Analyzed', 'Pending Assignment', 'Assigned'];
 const IN_PROGRESS = ['Accepted', 'In Progress'];
 
 // What the browser receives (the stored file name is never exposed; images are fetched through the protected image route).
-const toClient = (i) => ({
+export const toClient = (i) => ({
   id: i._id,
   reportId: i.reportId,
   description: i.description,
@@ -46,7 +46,7 @@ const toClient = (i) => ({
 });
 
 // Who may open an incident: its reporter, an Admin, or a Responder of the assigned group / the assigned person.
-function canAccess(user, incident) {
+export function canAccess(user, incident) {
   if (user.role === ROLES.ADMIN) return true;
   if (user.role === ROLES.USER) return incident.userId.equals(user._id);
   if (user.role === ROLES.RESPONDER) {
@@ -111,7 +111,8 @@ export const listMyIncidents = asyncHandler(async (req, res) => {
 export const getIncident = asyncHandler(async (req, res) => {
   const incident = await loadAccessible(req);
   const history = await IncidentHistory.find({ incidentId: incident._id }).sort({ timestamp: 1 }).populate('changedBy', 'name role');
-  const out = { ...toClient(incident), history: history.map((h) => ({ status: h.status, note: h.note, timestamp: h.timestamp, changedBy: h.changedBy ? h.changedBy.name : 'System' })) };
+  const responder = incident.assignedResponderId ? await User.findById(incident.assignedResponderId).select('name') : null;
+  const out = { ...toClient(incident), assignedResponderName: responder?.name, history: history.map((h) => ({ status: h.status, note: h.note, timestamp: h.timestamp, changedBy: h.changedBy ? h.changedBy.name : 'System' })) };
   if (req.user.role !== ROLES.USER) out.reporterName = (await User.findById(incident.userId).select('name'))?.name;
   res.json({ success: true, incident: out });
 });
