@@ -10,8 +10,8 @@ AI-assisted classification and routing, responder handling and status tracking.
 | 2. Authentication (register, login, JWT, hashing, roles, protected routes) | Done and verified in the browser (register, login, roles) |
 | 3. Incident reporting (form, GPS / map / manual location, image upload, report IDs, live user dashboard) | Done and verified in the browser against MongoDB Atlas |
 | 4. AI classification and routing (rule baseline, optional Gemini/Claude adapters, validation, evaluation, incident details page) | Done and verified in the browser (report classified Fire / High and routed to the Fire group) |
-| 5. Responder module (group dashboard, accept, start response, notes, resolve) | Code written. 57 database-free tests pass. Needs checking in the browser |
-| 6. User tracking and notifications | Planned |
+| 5. Responder module (group dashboard, accept, start response, notes, resolve) | Done and committed. Accept verified in the browser; remaining browser checks in progress |
+| 6. Notifications and user tracking (bell with unread count, notification list, status timeline) | Code written. 59 database-free tests pass. Needs checking in the browser |
 | 7. Admin dashboard and analytics | Planned |
 | 8. Testing and deployment | Planned |
 
@@ -76,6 +76,9 @@ npm run dev                 # app on http://localhost:5173
 | PUT | /api/responder/incidents/:id/accept | Responder (first to accept wins) |
 | PUT | /api/responder/incidents/:id/status | Responder (In Progress, Resolved; Resolved needs a note) |
 | POST | /api/responder/incidents/:id/notes | Responder (own Accepted / In Progress incidents) |
+| GET | /api/notifications | Logged-in (own notifications and unread count) |
+| PUT | /api/notifications/read-all | Logged-in (own notifications) |
+| PUT | /api/notifications/:id/read | Logged-in (own notification only) |
 
 ## AI classification (Stage 4)
 - After a report is saved, the server analyses it in the background: category, priority, summary and reason, then routes it to a responder group (status AI Analyzed, then Assigned or Pending Assignment).
@@ -91,5 +94,5 @@ npm run dev                 # app on http://localhost:5173
 5. In MongoDB, open the users collection: `passwordHash` is a bcrypt hash, never the plain password.
 
 ## Automated checks
-- `cd server && npm test` runs 57 tests that need no database (validation, token rejection, role check, error handling).
+- `cd server && npm test` runs 59 tests that need no database (validation, token rejection, role check, error handling).
 - GitHub Actions (`.github/workflows/ci.yml`) runs the backend tests and the frontend build on every push and pull request.

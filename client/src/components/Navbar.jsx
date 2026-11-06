@@ -1,5 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth, homeFor } from '../context/AuthContext.jsx';
+import NotificationBell from './NotificationBell.jsx';
 
 export default function Navbar() {
   const { user, logout } = useAuth();
@@ -14,6 +15,7 @@ export default function Navbar() {
         </Link>
         {user && (
           <div className="d-flex align-items-center gap-3 text-light">
+            <NotificationBell />
             <span className="d-none d-sm-inline">{user.name}</span>
             <span className="badge text-bg-secondary">{user.role}{user.responderCategory ? ` · ${user.responderCategory}` : ''}</span>
             <button className="btn btn-outline-light btn-sm" onClick={onLogout}>Logout</button>

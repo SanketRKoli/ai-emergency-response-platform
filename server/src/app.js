@@ -5,6 +5,7 @@ import { env } from './config/env.js';
 import authRoutes from './routes/authRoutes.js';
 import incidentRoutes from './routes/incidentRoutes.js';
 import responderRoutes from './routes/responderRoutes.js';
+import notificationRoutes from './routes/notificationRoutes.js';
 import { notFound, errorHandler } from './middleware/error.js';
 
 const app = express();
@@ -17,7 +18,8 @@ app.get('/api/health', (req, res) => res.json({ success: true, message: 'AI Emer
 app.use('/api/auth', authRoutes);
 app.use('/api/incidents', incidentRoutes);
 app.use('/api/responder', responderRoutes);
-// Next stages add: /api/admin, /api/notifications
+app.use('/api/notifications', notificationRoutes);
+// Next stage adds: /api/admin
 
 app.use(notFound);
 app.use(errorHandler);

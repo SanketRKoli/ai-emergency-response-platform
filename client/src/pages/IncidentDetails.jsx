@@ -6,6 +6,7 @@ import MapView from '../components/MapView.jsx';
 import StatusBadge from '../components/StatusBadge.jsx';
 import PriorityBadge from '../components/PriorityBadge.jsx';
 import ResponderPanel from '../components/ResponderPanel.jsx';
+import StatusTimeline from '../components/StatusTimeline.jsx';
 import { useAuth, homeFor } from '../context/AuthContext.jsx';
 
 const methodLabel = (m) => {
@@ -63,6 +64,11 @@ export default function IncidentDetails() {
       </div>
       {i.assignedResponderName && <div className="text-secondary small mb-3">Assigned responder: <strong>{i.assignedResponderName}</strong></div>}
       {user.role === 'Responder' && <ResponderPanel incident={i} onChanged={() => setTick((t) => t + 1)} />}
+
+      <div className="card shadow-sm mb-3"><div className="card-body">
+        <div className="fw-semibold mb-2">Progress</div>
+        <StatusTimeline incident={i} />
+      </div></div>
 
       <div className="card shadow-sm mb-3"><div className="card-body">
         <div className="fw-semibold mb-1">Description</div>
