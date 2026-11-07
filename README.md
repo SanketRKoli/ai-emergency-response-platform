@@ -10,9 +10,9 @@ AI-assisted classification and routing, responder handling and status tracking.
 | 2. Authentication (register, login, JWT, hashing, roles, protected routes) | Done and verified in the browser (register, login, roles) |
 | 3. Incident reporting (form, GPS / map / manual location, image upload, report IDs, live user dashboard) | Done and verified in the browser against MongoDB Atlas |
 | 4. AI classification and routing (rule baseline, optional Gemini/Claude adapters, validation, evaluation, incident details page) | Done and verified in the browser (report classified Fire / High and routed to the Fire group) |
-| 5. Responder module (group dashboard, accept, start response, notes, resolve) | Done and committed. Accept verified in the browser; remaining browser checks in progress |
-| 6. Notifications and user tracking (bell with unread count, notification list, status timeline) | Code written. 59 database-free tests pass. Needs checking in the browser |
-| 7. Admin dashboard and analytics | Planned |
+| 5. Responder module (group dashboard, accept, start response, notes, resolve) | Done and verified in the browser (accept, in progress, resolved) |
+| 6. Notifications and user tracking (bell with unread count, notification list, status timeline) | Done and verified in the browser (bell, unread count, timeline) |
+| 7. Admin dashboard (filters, charts, incident list, assign / reassign, correct AI classification, user management) | Code written. 66 database-free tests pass. Needs checking in the browser |
 | 8. Testing and deployment | Planned |
 
 ## Project documents
@@ -79,6 +79,13 @@ npm run dev                 # app on http://localhost:5173
 | GET | /api/notifications | Logged-in (own notifications and unread count) |
 | PUT | /api/notifications/read-all | Logged-in (own notifications) |
 | PUT | /api/notifications/:id/read | Logged-in (own notification only) |
+| GET | /api/admin/incidents | Admin (filters: status, category, priority, from, to, q; paged) |
+| GET | /api/admin/analytics | Admin (same filters; totals and chart data) |
+| PUT | /api/admin/incidents/:id/assign | Admin (assign or reassign a responder) |
+| PUT | /api/admin/incidents/:id/classification | Admin (correct AI category / priority; AI values are kept) |
+| GET | /api/admin/users | Admin |
+| POST | /api/admin/users | Admin (create a Responder or Admin) |
+| PUT | /api/admin/users/:id | Admin (name, role, group, enable / disable) |
 
 ## AI classification (Stage 4)
 - After a report is saved, the server analyses it in the background: category, priority, summary and reason, then routes it to a responder group (status AI Analyzed, then Assigned or Pending Assignment).
@@ -94,5 +101,5 @@ npm run dev                 # app on http://localhost:5173
 5. In MongoDB, open the users collection: `passwordHash` is a bcrypt hash, never the plain password.
 
 ## Automated checks
-- `cd server && npm test` runs 59 tests that need no database (validation, token rejection, role check, error handling).
+- `cd server && npm test` runs 66 tests that need no database (validation, token rejection, role check, error handling).
 - GitHub Actions (`.github/workflows/ci.yml`) runs the backend tests and the frontend build on every push and pull request.
