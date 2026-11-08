@@ -12,8 +12,8 @@ AI-assisted classification and routing, responder handling and status tracking.
 | 4. AI classification and routing (rule baseline, optional Gemini/Claude adapters, validation, evaluation, incident details page) | Done and verified in the browser (report classified Fire / High and routed to the Fire group) |
 | 5. Responder module (group dashboard, accept, start response, notes, resolve) | Done and verified in the browser (accept, in progress, resolved) |
 | 6. Notifications and user tracking (bell with unread count, notification list, status timeline) | Done and verified in the browser (bell, unread count, timeline) |
-| 7. Admin dashboard (filters, charts, incident list, assign / reassign, correct AI classification, user management) | Done, committed; browser check of the admin screens pending |
-| 8. Machine-learning classifier (Naive Bayes, training data, hybrid safety rule, comparison) | Code written. 75 database-free tests pass. Needs checking in the browser |
+| 7. Admin dashboard (filters, charts, incident list, assign / reassign, correct AI classification, user management) | Done and verified in the browser (cards, five charts, filters) |
+| 8. Machine-learning classifier (Naive Bayes, training data, hybrid safety rule, comparison) | Done and verified in the browser (Fire / Critical with word explanation); 75 tests pass |
 
 ## Project documents
 The `docs/` folder holds the literature survey, SRS and HLD, LLD and viva Q&A (PDF).
@@ -102,5 +102,5 @@ npm run dev                 # app on http://localhost:5173
 5. In MongoDB, open the users collection: `passwordHash` is a bcrypt hash, never the plain password.
 
 ## Automated checks
-- `cd server && npm test` runs 75 tests that need no database (validation, token rejection, role check, error handling).
+- `cd server && npm test` runs 76 tests that need no database (validation, token rejection, role check, error handling).
 - GitHub Actions (`.github/workflows/ci.yml`) runs the backend tests and the frontend build on every push and pull request.

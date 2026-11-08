@@ -52,6 +52,12 @@ test('model: the explanation lists real words from the report', () => {
   assert.match(r.reason, /smoke|flame/);
 });
 
+test('model: explanations show real words, not stems', () => {
+  const r = classifyWithML({ description: 'Fire broke out in the chemistry lab and students are trapped inside' });
+  assert.ok(!/trapp\b|\bstudent trapp/.test(r.reason), r.reason);
+  assert.match(r.reason, /trapped|students|fire|broke/);
+});
+
 test('model and hybrid: output always passes validation for every evaluation report', () => {
   for (const r of evaluation) for (const fn of [classifyWithML, classifyHybrid]) {
     const { method, ...raw } = fn({ description: r.text, locationDescription: 'Block B' });

@@ -77,12 +77,16 @@ export function predict(model, text) {
 }
 
 // Words that pushed the decision towards `label` rather than the runner-up (used to explain a result).
+// Stems such as "trapp" are shown as the real words from the report ("trapped").
 export function explain(model, text, label, second, top = 3) {
+  const original = new Map();
+  for (const w of String(text).toLowerCase().replace(/[^a-z\s]/g, ' ').split(/\s+/)) if (w && !STOP.has(w)) original.set(stem(w), w);
+  const show = (t) => t.split('_').map((part) => original.get(part) || part).join(' ');
   const { known } = predict(model, text);
   return known
     .map(([t, n]) => [t, n * model.idf[t] * ((model.logLik[label][t] ?? model.unseen[label]) - (model.logLik[second]?.[t] ?? model.unseen[second]))])
     .filter(([, v]) => v > 0)
     .sort((a, b) => b[1] - a[1])
     .slice(0, top)
-    .map(([t]) => t.replace('_', ' '));
+    .map(([t]) => show(t));
 }
