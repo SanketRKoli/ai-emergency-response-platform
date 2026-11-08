@@ -1,0 +1,2365 @@
+{
+"note": "Synthetic labelled reports generated from templates by the project author (not real incidents). Used only for training; the 62 evaluation reports are never used for training.",
+"reports": [
+{
+"text": "Fire broke out in Block A and is spreading",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Please help, Fire broke out in hostel room 12 and is spreading Kindly look into it.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Emergency! Fire broke out in the library and is spreading",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Fire broke out in the library and is spreading Need help.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Kindly note: Thick smoke is coming out of Block A Kindly look into it.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Emergency! Thick smoke is coming out of the boys hostel Need help.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Urgent: Thick smoke is coming out of Block A",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Hello, Thick smoke is coming out of the playground",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Sir, Someone left the stove on and the kitchen near the canteen is burning",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Sir, Someone left the stove on and the kitchen near classroom 204 is burning Thank you.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Someone left the stove on and the kitchen near the examination hall is burning",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Hello, Someone left the stove on and the kitchen near the library is burning Thank you.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Kindly note: A small fire in a dustbin near classroom 204, we are putting it out Kindly look into it.",
+"category": "Fire",
+"priority": "Medium"
+},
+{
+"text": "A small fire in a dustbin near Block B, we are putting it out Thank you.",
+"category": "Fire",
+"priority": "Medium"
+},
+{
+"text": "urgent: A small fire in a dustbin near the library, we are putting it out",
+"category": "Fire",
+"priority": "Medium"
+},
+{
+"text": "A small fire in a dustbin near the girls hostel, we are putting it out Kindly look into it.",
+"category": "Fire",
+"priority": "Medium"
+},
+{
+"text": "Sir, Smell of burning wires from the main gate, no flames visible yet",
+"category": "Fire",
+"priority": "Medium"
+},
+{
+"text": "urgent: Smell of burning wires from the gym, no flames visible yet",
+"category": "Fire",
+"priority": "Medium"
+},
+{
+"text": "Smell of burning wires from gate 2, no flames visible yet Need help.",
+"category": "Fire",
+"priority": "Medium"
+},
+{
+"text": "Please help, Smell of burning wires from the main gate, no flames visible yet Please send someone.",
+"category": "Fire",
+"priority": "Medium"
+},
+{
+"text": "Emergency! Sparks from the switchboard in the parking area set the curtains on fire Thank you.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "sparks from the switchboard in the parking area set the curtains on fire",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Sir, Sparks from the switchboard in the girls hostel set the curtains on fire",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Kindly note: Sparks from the switchboard in the gym set the curtains on fire Kindly look into it.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "i want to report that Students are trapped inside the girls hostel which is on fire",
+"category": "Fire",
+"priority": "Critical"
+},
+{
+"text": "I want to report that Students are trapped inside hostel room 12 which is on fire",
+"category": "Fire",
+"priority": "Critical"
+},
+{
+"text": "Emergency! Students are trapped inside the staff room which is on fire Need help.",
+"category": "Fire",
+"priority": "Critical"
+},
+{
+"text": "Hello, Students are trapped inside the computer lab which is on fire",
+"category": "Fire",
+"priority": "Critical"
+},
+{
+"text": "Gas cylinder exploded near the cafeteria and a fire started Thank you.",
+"category": "Fire",
+"priority": "Critical"
+},
+{
+"text": "Gas cylinder exploded near the canteen and a fire started",
+"category": "Fire",
+"priority": "Critical"
+},
+{
+"text": "Hello, Gas cylinder exploded near gate 2 and a fire started Please come fast.",
+"category": "Fire",
+"priority": "Critical"
+},
+{
+"text": "Kindly note: Gas cylinder exploded near the workshop and a fire started Need help.",
+"category": "Fire",
+"priority": "Critical"
+},
+{
+"text": "Fire alarm went off in the bus stop, I can see flames Kindly look into it.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Emergency! Fire alarm went off in the seminar hall, I can see flames Please send someone.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Fire alarm went off in the admin block, I can see flames Please come fast.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "fire alarm went off in the examination hall, I can see flames",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Urgent: Burning smell and light smoke from the generator room near the cafeteria Need help.",
+"category": "Fire",
+"priority": "Medium"
+},
+{
+"text": "Burning smell and light smoke from the generator room near the stationery shop Kindly look into it.",
+"category": "Fire",
+"priority": "Medium"
+},
+{
+"text": "Emergency! Burning smell and light smoke from the generator room near gate 2 Please send someone.",
+"category": "Fire",
+"priority": "Medium"
+},
+{
+"text": "burning smell and light smoke from the generator room near the staff room",
+"category": "Fire",
+"priority": "Medium"
+},
+{
+"text": "Emergency! An experiment caught fire in Block A Please come fast.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "an experiment caught fire in the canteen",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Urgent: An experiment caught fire in the parking area Need help.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "An experiment caught fire in the library Thank you.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "A bike is burning in the parking near the staff room",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "I want to report that A bike is burning in the parking near the staff room Need help.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "kindly note: A bike is burning in the parking near the boys hostel",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Emergency! A bike is burning in the parking near the examination hall Kindly look into it.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "urgent: Smouldering garbage heap beside the girls hostel, smoke is rising",
+"category": "Fire",
+"priority": "Medium"
+},
+{
+"text": "sir, Smouldering garbage heap beside the workshop, smoke is rising",
+"category": "Fire",
+"priority": "Medium"
+},
+{
+"text": "I want to report that Smouldering garbage heap beside the canteen, smoke is rising",
+"category": "Fire",
+"priority": "Medium"
+},
+{
+"text": "Sir, Smouldering garbage heap beside Block A, smoke is rising",
+"category": "Fire",
+"priority": "Medium"
+},
+{
+"text": "Kindly note: Electrical fire in the server room of the parking area Kindly look into it.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Electrical fire in the server room of the parking area",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Sir, Electrical fire in the server room of the library Please send someone.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "I want to report that Electrical fire in the server room of the chemistry lab Kindly look into it.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Kindly note: The whole floor of the computer lab is filled with smoke and people are coughing Thank you.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "I want to report that The whole floor of the boys hostel is filled with smoke and people are coughing",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Hello, The whole floor of classroom 204 is filled with smoke and people are coughing Please come fast.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "The whole floor of the bus stop is filled with smoke and people are coughing Kindly look into it.",
+"category": "Fire",
+"priority": "High"
+},
+{
+"text": "Blast followed by flames at Block B Please send someone.",
+"category": "Fire",
+"priority": "Critical"
+},
+{
+"text": "Blast followed by flames at the parking area Need help.",
+"category": "Fire",
+"priority": "Critical"
+},
+{
+"text": "I want to report that Blast followed by flames at hostel room 12 Please send someone.",
+"category": "Fire",
+"priority": "Critical"
+},
+{
+"text": "i want to report that Blast followed by flames at the parking area",
+"category": "Fire",
+"priority": "Critical"
+},
+{
+"text": "a student fainted in the workshop and is not waking up",
+"category": "Medical",
+"priority": "Critical"
+},
+{
+"text": "Emergency! A student fainted in the canteen and is not waking up Need help.",
+"category": "Medical",
+"priority": "Critical"
+},
+{
+"text": "a student fainted in the library and is not waking up",
+"category": "Medical",
+"priority": "Critical"
+},
+{
+"text": "Please help, A student fainted in the main gate and is not waking up Please come fast.",
+"category": "Medical",
+"priority": "Critical"
+},
+{
+"text": "please help, Someone is having chest pain near the girls hostel",
+"category": "Medical",
+"priority": "Critical"
+},
+{
+"text": "Someone is having chest pain near the girls hostel Please come fast.",
+"category": "Medical",
+"priority": "Critical"
+},
+{
+"text": "Urgent: Someone is having chest pain near the workshop Kindly look into it.",
+"category": "Medical",
+"priority": "Critical"
+},
+{
+"text": "Emergency! Someone is having chest pain near the bus stop",
+"category": "Medical",
+"priority": "Critical"
+},
+{
+"text": "Please help, Girl has a severe asthma attack in the admin block, needs an inhaler",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "Kindly note: Girl has a severe asthma attack in the examination hall, needs an inhaler Kindly look into it.",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "Sir, Girl has a severe asthma attack in Block B, needs an inhaler Please come fast.",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "Emergency! Girl has a severe asthma attack in the cafeteria, needs an inhaler Need help.",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "A boy got hurt while playing and his leg is bleeding at the main gate",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "Please help, A boy got hurt while playing and his leg is bleeding at the girls hostel Need help.",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "Please help, A boy got hurt while playing and his leg is bleeding at the computer lab Need help.",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "A boy got hurt while playing and his leg is bleeding at the boys hostel Need help.",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "emergency! Staff member feeling dizzy and nauseous in the playground",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "Please help, Staff member feeling dizzy and nauseous in the bus stop",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "Urgent: Staff member feeling dizzy and nauseous in the girls hostel Kindly look into it.",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "Urgent: Staff member feeling dizzy and nauseous in the workshop Thank you.",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "Student has high fever and headache in Block A Need help.",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "Student has high fever and headache in the library Need help.",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "urgent: Student has high fever and headache in hostel room 12",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "Student has high fever and headache in the parking area",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "I want to report that Person had a seizure in the staff room Need help.",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "Emergency! Person had a seizure in Block A Need help.",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "Urgent: Person had a seizure in the bus stop",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "urgent: Person had a seizure in the canteen",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "Emergency! Child bitten by a dog near hostel room 12, needs an injection Need help.",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "Please help, Child bitten by a dog near the gym, needs an injection Kindly look into it.",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "Urgent: Child bitten by a dog near the cafeteria, needs an injection Thank you.",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "Child bitten by a dog near the library, needs an injection Thank you.",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "Urgent: A woman is having difficulty in breathing at Block B Thank you.",
+"category": "Medical",
+"priority": "Critical"
+},
+{
+"text": "a woman is having difficulty in breathing at the stationery shop",
+"category": "Medical",
+"priority": "Critical"
+},
+{
+"text": "A woman is having difficulty in breathing at the examination hall Kindly look into it.",
+"category": "Medical",
+"priority": "Critical"
+},
+{
+"text": "Hello, A woman is having difficulty in breathing at the staff room",
+"category": "Medical",
+"priority": "Critical"
+},
+{
+"text": "Student has stomach pain and vomiting since morning in the staff room Please send someone.",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "Kindly note: Student has stomach pain and vomiting since morning in the staff room",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "Student has stomach pain and vomiting since morning in the admin block Thank you.",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "Student has stomach pain and vomiting since morning in classroom 204",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "He cut his finger while working in classroom 204, small bleeding Thank you.",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "Hello, He cut his finger while working in gate 2, small bleeding",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "he cut his finger while working in the main gate, small bleeding",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "He cut his finger while working in the main gate, small bleeding Please send someone.",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "hello, Allergic reaction after eating at the bus stop, face is swelling",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "Please help, Allergic reaction after eating at the seminar hall, face is swelling Kindly look into it.",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "allergic reaction after eating at the girls hostel, face is swelling",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "I want to report that Allergic reaction after eating at the parking area, face is swelling Please come fast.",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "sir, Elderly visitor collapsed near the admin block, ambulance needed",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "Please help, Elderly visitor collapsed near the parking area, ambulance needed",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "Hello, Elderly visitor collapsed near the playground, ambulance needed",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "Urgent: Elderly visitor collapsed near classroom 204, ambulance needed Please come fast.",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "emergency! Heavy bleeding from a head wound at the playground",
+"category": "Medical",
+"priority": "Critical"
+},
+{
+"text": "Heavy bleeding from a head wound at the seminar hall Please send someone.",
+"category": "Medical",
+"priority": "Critical"
+},
+{
+"text": "Heavy bleeding from a head wound at the canteen Please send someone.",
+"category": "Medical",
+"priority": "Critical"
+},
+{
+"text": "Sir, Heavy bleeding from a head wound at the boys hostel Need help.",
+"category": "Medical",
+"priority": "Critical"
+},
+{
+"text": "student twisted ankle at the girls hostel and cannot walk",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "Please help, Student twisted ankle at the seminar hall and cannot walk Please come fast.",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "student twisted ankle at the cafeteria and cannot walk",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "Emergency! Student twisted ankle at the bus stop and cannot walk Kindly look into it.",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "Please help, Need first aid kit and a doctor at classroom 204 Kindly look into it.",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "Sir, Need first aid kit and a doctor at gate 2 Thank you.",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "need first aid kit and a doctor at the examination hall",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "Emergency! Need first aid kit and a doctor at the admin block Please send someone.",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "Hello, Poisonous snake bit a worker near the gym",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "Please help, Poisonous snake bit a worker near the boys hostel Please come fast.",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "Poisonous snake bit a worker near gate 2 Please come fast.",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "Emergency! Poisonous snake bit a worker near Block A",
+"category": "Medical",
+"priority": "High"
+},
+{
+"text": "Hello, Someone fainted but is conscious now at the computer lab Please send someone.",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "I want to report that Someone fainted but is conscious now at the workshop",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "Emergency! Someone fainted but is conscious now at the auditorium Thank you.",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "Someone fainted but is conscious now at the bus stop Need help.",
+"category": "Medical",
+"priority": "Medium"
+},
+{
+"text": "Kindly note: Heart attack symptoms for a professor in the playground Thank you.",
+"category": "Medical",
+"priority": "Critical"
+},
+{
+"text": "Please help, Heart attack symptoms for a professor in the bus stop Thank you.",
+"category": "Medical",
+"priority": "Critical"
+},
+{
+"text": "Please help, Heart attack symptoms for a professor in hostel room 12",
+"category": "Medical",
+"priority": "Critical"
+},
+{
+"text": "i want to report that Heart attack symptoms for a professor in gate 2",
+"category": "Medical",
+"priority": "Critical"
+},
+{
+"text": "Two vehicles collided near the workshop, people are injured Kindly look into it.",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "Kindly note: Two vehicles collided near the chemistry lab, people are injured Please come fast.",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "I want to report that Two vehicles collided near the girls hostel, people are injured Kindly look into it.",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "Two vehicles collided near the canteen, people are injured",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "A bike skidded and the rider fell near the gym",
+"category": "Accident",
+"priority": "Medium"
+},
+{
+"text": "emergency! A bike skidded and the rider fell near the parking area",
+"category": "Accident",
+"priority": "Medium"
+},
+{
+"text": "A bike skidded and the rider fell near the workshop Please come fast.",
+"category": "Accident",
+"priority": "Medium"
+},
+{
+"text": "Emergency! A bike skidded and the rider fell near the staff room Thank you.",
+"category": "Accident",
+"priority": "Medium"
+},
+{
+"text": "i want to report that Car hit a pedestrian at gate 2",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "emergency! Car hit a pedestrian at the boys hostel",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "emergency! Car hit a pedestrian at the workshop",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "I want to report that Car hit a pedestrian at the workshop",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "Urgent: A bus met with an accident at the cafeteria",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "Urgent: A bus met with an accident at the workshop Please send someone.",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "Please help, A bus met with an accident at the seminar hall Need help.",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "A bus met with an accident at hostel room 12 Please come fast.",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "Minor collision in the parking of the gym, no one hurt Please come fast.",
+"category": "Accident",
+"priority": "Low"
+},
+{
+"text": "Hello, Minor collision in the parking of the playground, no one hurt Please come fast.",
+"category": "Accident",
+"priority": "Low"
+},
+{
+"text": "minor collision in the parking of the chemistry lab, no one hurt",
+"category": "Accident",
+"priority": "Low"
+},
+{
+"text": "hello, Minor collision in the parking of the computer lab, no one hurt",
+"category": "Accident",
+"priority": "Low"
+},
+{
+"text": "A truck overturned near the computer lab",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "Sir, A truck overturned near the admin block Thank you.",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "Hello, A truck overturned near the staff room Need help.",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "Kindly note: A truck overturned near the parking area Please send someone.",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "Hello, Auto rickshaw crashed into the gate at the auditorium Please send someone.",
+"category": "Accident",
+"priority": "Medium"
+},
+{
+"text": "Hello, Auto rickshaw crashed into the gate at the examination hall Please come fast.",
+"category": "Accident",
+"priority": "Medium"
+},
+{
+"text": "Auto rickshaw crashed into the gate at gate 2 Please come fast.",
+"category": "Accident",
+"priority": "Medium"
+},
+{
+"text": "Kindly note: Auto rickshaw crashed into the gate at the computer lab",
+"category": "Accident",
+"priority": "Medium"
+},
+{
+"text": "hello, Road accident outside hostel room 12, a cyclist is lying on the road",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "Road accident outside Block B, a cyclist is lying on the road Please send someone.",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "Please help, Road accident outside the workshop, a cyclist is lying on the road Thank you.",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "Hello, Road accident outside the seminar hall, a cyclist is lying on the road Thank you.",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "hello, A scooter rider hit a pole near the seminar hall and is bleeding",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "I want to report that A scooter rider hit a pole near Block A and is bleeding",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "Sir, A scooter rider hit a pole near the parking area and is bleeding Thank you.",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "a scooter rider hit a pole near Block A and is bleeding",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "Please help, Vehicle rammed into the wall of Block A",
+"category": "Accident",
+"priority": "Medium"
+},
+{
+"text": "Vehicle rammed into the wall of the auditorium Need help.",
+"category": "Accident",
+"priority": "Medium"
+},
+{
+"text": "Please help, Vehicle rammed into the wall of the workshop Thank you.",
+"category": "Accident",
+"priority": "Medium"
+},
+{
+"text": "Sir, Vehicle rammed into the wall of the main gate Kindly look into it.",
+"category": "Accident",
+"priority": "Medium"
+},
+{
+"text": "car and bike accident at the junction near the main gate, traffic is blocked",
+"category": "Accident",
+"priority": "Medium"
+},
+{
+"text": "Car and bike accident at the junction near the computer lab, traffic is blocked Please send someone.",
+"category": "Accident",
+"priority": "Medium"
+},
+{
+"text": "kindly note: Car and bike accident at the junction near the bus stop, traffic is blocked",
+"category": "Accident",
+"priority": "Medium"
+},
+{
+"text": "hello, Car and bike accident at the junction near the girls hostel, traffic is blocked",
+"category": "Accident",
+"priority": "Medium"
+},
+{
+"text": "Please help, A reversing van hit a student at the library Thank you.",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "Please help, A reversing van hit a student at the canteen Please send someone.",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "Kindly note: A reversing van hit a student at the canteen Need help.",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "A reversing van hit a student at classroom 204 Kindly look into it.",
+"category": "Accident",
+"priority": "High"
+},
+{
+"text": "Sir, Student fell off a bicycle at the library, scraped knee Please send someone.",
+"category": "Accident",
+"priority": "Low"
+},
+{
+"text": "student fell off a bicycle at the boys hostel, scraped knee",
+"category": "Accident",
+"priority": "Low"
+},
+{
+"text": "I want to report that Student fell off a bicycle at the gym, scraped knee",
+"category": "Accident",
+"priority": "Low"
+},
+{
+"text": "Emergency! Student fell off a bicycle at the stationery shop, scraped knee Thank you.",
+"category": "Accident",
+"priority": "Low"
+},
+{
+"text": "Emergency! Two cars scratched each other in the lot near the auditorium Thank you.",
+"category": "Accident",
+"priority": "Low"
+},
+{
+"text": "Kindly note: Two cars scratched each other in the lot near the seminar hall",
+"category": "Accident",
+"priority": "Low"
+},
+{
+"text": "two cars scratched each other in the lot near the seminar hall",
+"category": "Accident",
+"priority": "Low"
+},
+{
+"text": "Please help, Two cars scratched each other in the lot near the workshop Kindly look into it.",
+"category": "Accident",
+"priority": "Low"
+},
+{
+"text": "Hello, Head-on collision on the road near the playground, several people are trapped Thank you.",
+"category": "Accident",
+"priority": "Critical"
+},
+{
+"text": "Sir, Head-on collision on the road near the main gate, several people are trapped Please send someone.",
+"category": "Accident",
+"priority": "Critical"
+},
+{
+"text": "Urgent: Head-on collision on the road near the playground, several people are trapped Need help.",
+"category": "Accident",
+"priority": "Critical"
+},
+{
+"text": "Urgent: Head-on collision on the road near the staff room, several people are trapped",
+"category": "Accident",
+"priority": "Critical"
+},
+{
+"text": "Someone stole a laptop from the parking area Please come fast.",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "Emergency! Someone stole a laptop from the parking area Kindly look into it.",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "I want to report that Someone stole a laptop from the workshop",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "Urgent: Someone stole a laptop from the parking area",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "Urgent: My phone was stolen near the bus stop Please come fast.",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "Emergency! My phone was stolen near the cafeteria Kindly look into it.",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "Emergency! My phone was stolen near the playground Please come fast.",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "Urgent: My phone was stolen near the admin block",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "Please help, A group is fighting with sticks at the playground Need help.",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "A group is fighting with sticks at the chemistry lab Please come fast.",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Urgent: A group is fighting with sticks at the examination hall Thank you.",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Emergency! A group is fighting with sticks at gate 2",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Please help, A stranger is wandering near the admin block and looks suspicious",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "Urgent: A stranger is wandering near Block A and looks suspicious",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "urgent: A stranger is wandering near Block B and looks suspicious",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "Emergency! A stranger is wandering near the admin block and looks suspicious",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "i want to report that Unknown man entered the canteen without permission",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Kindly note: Unknown man entered the admin block without permission Please come fast.",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "sir, Unknown man entered the main gate without permission",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Urgent: Unknown man entered the auditorium without permission",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Hello, A man is threatening students with a knife near the auditorium Kindly look into it.",
+"category": "Security",
+"priority": "Critical"
+},
+{
+"text": "A man is threatening students with a knife near hostel room 12 Need help.",
+"category": "Security",
+"priority": "Critical"
+},
+{
+"text": "urgent: A man is threatening students with a knife near the library",
+"category": "Security",
+"priority": "Critical"
+},
+{
+"text": "A man is threatening students with a knife near the staff room Need help.",
+"category": "Security",
+"priority": "Critical"
+},
+{
+"text": "Kindly note: A girl is being followed by a guy near gate 2 Need help.",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "hello, A girl is being followed by a guy near the workshop",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "urgent: A girl is being followed by a guy near the computer lab",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Urgent: A girl is being followed by a guy near the computer lab Need help.",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Ragging of juniors in the chemistry lab Please send someone.",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Ragging of juniors in the main gate Need help.",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Ragging of juniors in the main gate Please come fast.",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Kindly note: Ragging of juniors in the auditorium",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Urgent: Bike stolen from the parking at the gym Thank you.",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "I want to report that Bike stolen from the parking at the library Please send someone.",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "kindly note: Bike stolen from the parking at the bus stop",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "Please help, Bike stolen from the parking at the boys hostel",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "drunk person creating trouble at the seminar hall",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "Drunk person creating trouble at Block B Please send someone.",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "kindly note: Drunk person creating trouble at the examination hall",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "Urgent: Drunk person creating trouble at the workshop Kindly look into it.",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "Urgent: Someone is trying to break into the gym Please send someone.",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Emergency! Someone is trying to break into the staff room",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "kindly note: Someone is trying to break into Block B",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Sir, Someone is trying to break into gate 2",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "please help, Lost child found crying near the bus stop",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "kindly note: Lost child found crying near the computer lab",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Urgent: Lost child found crying near the computer lab Thank you.",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Lost child found crying near the auditorium Please come fast.",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "urgent: Chain snatching incident near the main gate",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "hello, Chain snatching incident near the stationery shop",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Chain snatching incident near the auditorium Please send someone.",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Sir, Chain snatching incident near the bus stop",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Sir, Harassment of a student by a senior in the boys hostel Please send someone.",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Hello, Harassment of a student by a senior in the staff room",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Sir, Harassment of a student by a senior in the seminar hall Thank you.",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "hello, Harassment of a student by a senior in the cafeteria",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "suspicious bag left unattended at the bus stop",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "I want to report that Suspicious bag left unattended at the boys hostel Need help.",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Sir, Suspicious bag left unattended at gate 2 Kindly look into it.",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "I want to report that Suspicious bag left unattended at Block B Need help.",
+"category": "Security",
+"priority": "High"
+},
+{
+"text": "Theft of money from a locker in the admin block Kindly look into it.",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "I want to report that Theft of money from a locker in the canteen Kindly look into it.",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "Kindly note: Theft of money from a locker in the parking area Please send someone.",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "Emergency! Theft of money from a locker in Block A",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "Please help, A man with a gun was seen near the canteen",
+"category": "Security",
+"priority": "Critical"
+},
+{
+"text": "a man with a gun was seen near the auditorium",
+"category": "Security",
+"priority": "Critical"
+},
+{
+"text": "Urgent: A man with a gun was seen near the cafeteria Please come fast.",
+"category": "Security",
+"priority": "Critical"
+},
+{
+"text": "I want to report that A man with a gun was seen near the auditorium Need help.",
+"category": "Security",
+"priority": "Critical"
+},
+{
+"text": "CCTV camera in the girls hostel was damaged by someone Need help.",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "emergency! CCTV camera in the examination hall was damaged by someone",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "CCTV camera in the seminar hall was damaged by someone Thank you.",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "hello, CCTV camera in the playground was damaged by someone",
+"category": "Security",
+"priority": "Medium"
+},
+{
+"text": "emergency! No electricity in the seminar hall since morning",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Urgent: No electricity in the examination hall since morning Need help.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Kindly note: No electricity in the bus stop since morning",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "I want to report that No electricity in the staff room since morning Please send someone.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Emergency! Water pipe burst near the staff room and water is flooding the road Please send someone.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Please help, Water pipe burst near the gym and water is flooding the road Please come fast.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Please help, Water pipe burst near the boys hostel and water is flooding the road Kindly look into it.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "i want to report that Water pipe burst near the gym and water is flooding the road",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "hello, Big crack in the wall of the girls hostel",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "big crack in the wall of the auditorium",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "big crack in the wall of the cafeteria",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "sir, Big crack in the wall of the canteen",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "I want to report that Pothole on the road near the canteen Please come fast.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Pothole on the road near the examination hall Thank you.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Pothole on the road near the library Please send someone.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Sir, Pothole on the road near gate 2 Kindly look into it.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "power cut in the whole campus",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "emergency! Power cut in the whole campus",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "I want to report that Power cut in the whole campus",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Please help, Power cut in the whole campus Please send someone.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Please help, Open manhole near the examination hall, dangerous",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "Open manhole near the workshop, dangerous Please send someone.",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "Open manhole near Block B, dangerous",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "Urgent: Open manhole near classroom 204, dangerous",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "Please help, Sewage is overflowing near the cafeteria Kindly look into it.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Sewage is overflowing near the main gate Need help.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Hello, Sewage is overflowing near gate 2 Please come fast.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Kindly note: Sewage is overflowing near hostel room 12 Kindly look into it.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Urgent: Live electric wire fell on the ground near the workshop",
+"category": "Infrastructure",
+"priority": "Critical"
+},
+{
+"text": "I want to report that Live electric wire fell on the ground near the admin block",
+"category": "Infrastructure",
+"priority": "Critical"
+},
+{
+"text": "live electric wire fell on the ground near the workshop",
+"category": "Infrastructure",
+"priority": "Critical"
+},
+{
+"text": "Kindly note: Live electric wire fell on the ground near the admin block Please come fast.",
+"category": "Infrastructure",
+"priority": "Critical"
+},
+{
+"text": "urgent: Roof of the workshop is leaking heavily and the ceiling is falling",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "please help, Roof of the girls hostel is leaking heavily and the ceiling is falling",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "Roof of the parking area is leaking heavily and the ceiling is falling Please send someone.",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "kindly note: Roof of the admin block is leaking heavily and the ceiling is falling",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "urgent: Gas leakage smell from the pipeline near Block A",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "Hello, Gas leakage smell from the pipeline near the seminar hall Thank you.",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "Gas leakage smell from the pipeline near gate 2 Thank you.",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "Urgent: Gas leakage smell from the pipeline near the parking area Please send someone.",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "Please help, Transformer near the stationery shop is making loud noise and sparking Please send someone.",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "Transformer near the stationery shop is making loud noise and sparking Kindly look into it.",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "Transformer near the admin block is making loud noise and sparking",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "Kindly note: Transformer near classroom 204 is making loud noise and sparking",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "Urgent: Internet is down in the playground",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Please help, Internet is down in hostel room 12 Please send someone.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "emergency! Internet is down in the cafeteria",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "internet is down in the seminar hall",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "I want to report that Tree fell on the road near the admin block blocking traffic Please send someone.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "tree fell on the road near the workshop blocking traffic",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "tree fell on the road near the parking area blocking traffic",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Hello, Tree fell on the road near the staff room blocking traffic Thank you.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Hello, No water supply in Block A for two days",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "I want to report that No water supply in classroom 204 for two days Kindly look into it.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Urgent: No water supply in the computer lab for two days Kindly look into it.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Sir, No water supply in the canteen for two days Please come fast.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "drainage blocked and water logging outside gate 2",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "emergency! Drainage blocked and water logging outside the playground",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Please help, Drainage blocked and water logging outside the stationery shop Thank you.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "I want to report that Drainage blocked and water logging outside the gym Please come fast.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Compound wall near hostel room 12 collapsed",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "Urgent: Compound wall near the auditorium collapsed",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "Emergency! Compound wall near hostel room 12 collapsed Please send someone.",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "Emergency! Compound wall near the boys hostel collapsed Kindly look into it.",
+"category": "Infrastructure",
+"priority": "High"
+},
+{
+"text": "Street lights are off on the road to the boys hostel Thank you.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "I want to report that Street lights are off on the road to gate 2 Please send someone.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "Street lights are off on the road to the gym Please come fast.",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "i want to report that Street lights are off on the road to the parking area",
+"category": "Infrastructure",
+"priority": "Medium"
+},
+{
+"text": "The fan in the bus stop is not working Kindly look into it.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Sir, The fan in Block B is not working",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "The fan in the workshop is not working",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Kindly note: The fan in Block A is not working Please send someone.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Please help, Tube light in hostel room 12 is fused",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Tube light in the staff room is fused",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Please help, Tube light in the playground is fused Thank you.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Kindly note: Tube light in Block A is fused",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Tap in the washroom near the staff room is leaking",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "tap in the washroom near the bus stop is leaking",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Tap in the washroom near Block A is leaking Thank you.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Please help, Tap in the washroom near the computer lab is leaking",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Urgent: Projector in Block B is broken Please come fast.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Emergency! Projector in the canteen is broken Please come fast.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "I want to report that Projector in classroom 204 is broken",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "I want to report that Projector in the cafeteria is broken Need help.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Door lock of the examination hall is jammed Thank you.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Emergency! Door lock of the admin block is jammed",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "door lock of the auditorium is jammed",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Hello, Door lock of the bus stop is jammed Kindly look into it.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "i want to report that Dustbins near the library are overflowing",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Sir, Dustbins near gate 2 are overflowing",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Urgent: Dustbins near gate 2 are overflowing Need help.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "sir, Dustbins near the girls hostel are overflowing",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Emergency! The lift near the admin block is stuck with people inside Need help.",
+"category": "Maintenance",
+"priority": "High"
+},
+{
+"text": "Hello, The lift near the canteen is stuck with people inside",
+"category": "Maintenance",
+"priority": "High"
+},
+{
+"text": "emergency! The lift near the examination hall is stuck with people inside",
+"category": "Maintenance",
+"priority": "High"
+},
+{
+"text": "hello, The lift near the workshop is stuck with people inside",
+"category": "Maintenance",
+"priority": "High"
+},
+{
+"text": "hello, AC in the playground is not cooling",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Hello, AC in the boys hostel is not cooling Please send someone.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Hello, AC in the playground is not cooling Please send someone.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "aC in the bus stop is not cooling",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "benches in the library are broken",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Benches in the boys hostel are broken Kindly look into it.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Sir, Benches in hostel room 12 are broken Need help.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Emergency! Benches in the staff room are broken",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "hello, Washroom in classroom 204 is dirty and needs cleaning",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Hello, Washroom in the examination hall is dirty and needs cleaning Please send someone.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Kindly note: Washroom in the admin block is dirty and needs cleaning Need help.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Emergency! Washroom in the chemistry lab is dirty and needs cleaning Please come fast.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Please help, Window glass broken in the canteen, please repair Need help.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Sir, Window glass broken in the canteen, please repair Need help.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "please help, Window glass broken in the boys hostel, please repair",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Kindly note: Window glass broken in gate 2, please repair Need help.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "water cooler near gate 2 is out of order",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Urgent: Water cooler near Block A is out of order Kindly look into it.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Urgent: Water cooler near the playground is out of order",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Water cooler near the computer lab is out of order",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Whiteboard in the examination hall is damaged",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Whiteboard in the examination hall is damaged Please come fast.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Hello, Whiteboard in the workshop is damaged Please send someone.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Urgent: Whiteboard in the examination hall is damaged Need help.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "kindly note: Switch socket in the library is loose",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Switch socket in the main gate is loose",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Switch socket in the seminar hall is loose Please come fast.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "I want to report that Switch socket in gate 2 is loose Please send someone.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Please help, Paint is peeling off the walls in the cafeteria Please come fast.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Paint is peeling off the walls in the admin block Need help.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "I want to report that Paint is peeling off the walls in the cafeteria",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "please help, Paint is peeling off the walls in the girls hostel",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "The geyser in Block A is not heating",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "The geyser in the seminar hall is not heating",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "The geyser in the auditorium is not heating",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "The geyser in the girls hostel is not heating",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "emergency! Flush is not working in the toilet at the staff room",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Sir, Flush is not working in the toilet at the library Kindly look into it.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Flush is not working in the toilet at the boys hostel",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Sir, Flush is not working in the toilet at the computer lab Please come fast.",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Hello, Chairs in the admin block are broken and need replacing",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "sir, Chairs in the main gate are broken and need replacing",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "kindly note: Chairs in the workshop are broken and need replacing",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Sir, Chairs in the library are broken and need replacing",
+"category": "Maintenance",
+"priority": "Low"
+},
+{
+"text": "Please help, Lost my ID card near the boys hostel Need help.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "lost my ID card near the girls hostel",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Sir, Lost my ID card near the parking area",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Lost my ID card near the cafeteria Need help.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "emergency! Please tell me whom to contact for a bonafide certificate",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Sir, Please tell me whom to contact for a bonafide certificate Thank you.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Please tell me whom to contact for a bonafide certificate Please send someone.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Please help, Please tell me whom to contact for a bonafide certificate Thank you.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "stray dogs are gathering near the main gate",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "I want to report that Stray dogs are gathering near the workshop Thank you.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Kindly note: Stray dogs are gathering near the workshop Need help.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "kindly note: Stray dogs are gathering near the playground",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Sir, Loud music at night near hostel room 12 Please come fast.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "I want to report that Loud music at night near the stationery shop Please send someone.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Kindly note: Loud music at night near Block B",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Urgent: Loud music at night near the workshop",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Sir, Found a wallet at the admin block Thank you.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Found a wallet at gate 2 Please come fast.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "I want to report that Found a wallet at the computer lab Thank you.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "found a wallet at the workshop",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Kindly note: Where is the placement office located Need help.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "I want to report that Where is the placement office located",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Sir, Where is the placement office located Kindly look into it.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Where is the placement office located Please come fast.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "I want to report that There is a bee hive near the cafeteria",
+"category": "Other",
+"priority": "Medium"
+},
+{
+"text": "sir, There is a bee hive near classroom 204",
+"category": "Other",
+"priority": "Medium"
+},
+{
+"text": "Hello, There is a bee hive near the boys hostel Kindly look into it.",
+"category": "Other",
+"priority": "Medium"
+},
+{
+"text": "Kindly note: There is a bee hive near Block B Kindly look into it.",
+"category": "Other",
+"priority": "Medium"
+},
+{
+"text": "Sir, Monkeys entered the library Need help.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Hello, Monkeys entered the admin block Thank you.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Kindly note: Monkeys entered hostel room 12 Need help.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Monkeys entered classroom 204 Kindly look into it.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Hello, Need permission to conduct an event in hostel room 12",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Urgent: Need permission to conduct an event in the staff room Thank you.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Sir, Need permission to conduct an event in hostel room 12 Thank you.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Emergency! Need permission to conduct an event in the library Please come fast.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Emergency! Suggestion: more benches are needed in classroom 204 Please send someone.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Suggestion: more benches are needed in the chemistry lab Thank you.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "I want to report that Suggestion: more benches are needed in the chemistry lab",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Suggestion: more benches are needed in the library Thank you.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Parking is confusing near the cafeteria Thank you.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Emergency! Parking is confusing near Block B Thank you.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Kindly note: Parking is confusing near hostel room 12",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "parking is confusing near the main gate",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Kindly note: The food at the main gate was cold today",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Hello, The food at classroom 204 was cold today",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "I want to report that The food at gate 2 was cold today Kindly look into it.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "I want to report that The food at the parking area was cold today Please send someone.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "I want to report that Class timings are not displayed at the chemistry lab Need help.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "I want to report that Class timings are not displayed at the workshop Thank you.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Hello, Class timings are not displayed at the cafeteria",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Please help, Class timings are not displayed at gate 2 Please send someone.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Visitors want directions to the stationery shop Please send someone.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Emergency! Visitors want directions to the canteen Need help.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Visitors want directions to the admin block",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "urgent: Visitors want directions to the workshop",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Umbrella left behind in the boys hostel",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "i want to report that Umbrella left behind in classroom 204",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "Hello, Umbrella left behind in Block B Please send someone.",
+"category": "Other",
+"priority": "Low"
+},
+{
+"text": "please help, Umbrella left behind in the girls hostel",
+"category": "Other",
+"priority": "Low"
+}
+]
+}

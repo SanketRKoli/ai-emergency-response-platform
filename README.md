@@ -12,8 +12,8 @@ AI-assisted classification and routing, responder handling and status tracking.
 | 4. AI classification and routing (rule baseline, optional Gemini/Claude adapters, validation, evaluation, incident details page) | Done and verified in the browser (report classified Fire / High and routed to the Fire group) |
 | 5. Responder module (group dashboard, accept, start response, notes, resolve) | Done and verified in the browser (accept, in progress, resolved) |
 | 6. Notifications and user tracking (bell with unread count, notification list, status timeline) | Done and verified in the browser (bell, unread count, timeline) |
-| 7. Admin dashboard (filters, charts, incident list, assign / reassign, correct AI classification, user management) | Code written. 66 database-free tests pass. Needs checking in the browser |
-| 8. Testing and deployment | Planned |
+| 7. Admin dashboard (filters, charts, incident list, assign / reassign, correct AI classification, user management) | Done, committed; browser check of the admin screens pending |
+| 8. Machine-learning classifier (Naive Bayes, training data, hybrid safety rule, comparison) | Code written. 75 database-free tests pass. Needs checking in the browser |
 
 ## Project documents
 The `docs/` folder holds the literature survey, SRS and HLD, LLD and viva Q&A (PDF).
@@ -89,9 +89,10 @@ npm run dev                 # app on http://localhost:5173
 
 ## AI classification (Stage 4)
 - After a report is saved, the server analyses it in the background: category, priority, summary and reason, then routes it to a responder group (status AI Analyzed, then Assigned or Pending Assignment).
-- `AI_PROVIDER=rules` (default) uses a **keyword-rule baseline, which is not machine learning**. `gemini` or `anthropic` call a language model; if it fails, the rules are used (set `AI_FALLBACK_TO_RULES=false` to leave the report for manual review instead).
+- `AI_PROVIDER=hybrid` (default) uses a **machine-learning classifier** (Naive Bayes written from scratch, see `server/src/services/ai/nb.js`) plus one safety rule: life-threatening wording is always Critical. `ml` is the model alone. `rules` is the **keyword-rule baseline, which is not machine learning**. `gemini` or `anthropic` call a language model; if it fails, the rules are used (set `AI_FALLBACK_TO_RULES=false` to leave the report for manual review instead).
 - AI output is validated by the server (only allowed categories and priorities are accepted). Only the report text is sent to a model, never the reporter's name or email.
-- `npm run evaluate` (in `server`) measures accuracy, precision, recall, F1 and a confusion matrix on the 62 labelled sample reports in `server/evaluation/dataset.json`. The set is small and written by the project author, so results are indicative only. Run `npm run evaluate -- --provider=gemini` to compare a language model.
+- **Machine learning:** two Naive Bayes models (category and priority) on TF-IDF features, trained by `npm run train` on `server/ml/training-data.json` (472 synthetic labelled reports generated from templates; not real incidents). The 62 evaluation reports are never used for training. On those 62 held-out reports: rules 91.9% category accuracy, ML 95.2%. The set is small, written by the project author, and the difference is 2 reports, so this is indicative only. Weak spots: negation ("nobody is hurt"), words not in the training data ("bonfire"), ambiguous cases.
+- `npm run evaluate` (in `server`; add `-- --compare` for a rules / ml / hybrid table) measures accuracy, precision, recall, F1 and a confusion matrix on the 62 labelled sample reports in `server/evaluation/dataset.json`. The set is small and written by the project author, so results are indicative only. Run `npm run evaluate -- --provider=gemini` to compare a language model.
 
 ## How to test this stage
 1. Register a new user: you land on the User dashboard.
@@ -101,5 +102,5 @@ npm run dev                 # app on http://localhost:5173
 5. In MongoDB, open the users collection: `passwordHash` is a bcrypt hash, never the plain password.
 
 ## Automated checks
-- `cd server && npm test` runs 66 tests that need no database (validation, token rejection, role check, error handling).
+- `cd server && npm test` runs 75 tests that need no database (validation, token rejection, role check, error handling).
 - GitHub Actions (`.github/workflows/ci.yml`) runs the backend tests and the frontend build on every push and pull request.

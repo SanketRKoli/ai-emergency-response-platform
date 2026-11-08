@@ -11,6 +11,8 @@ import { useAuth, homeFor } from '../context/AuthContext.jsx';
 
 const methodLabel = (m) => {
   if (!m) return '';
+  if (m.startsWith('ml-nb')) return 'Machine learning: Naive Bayes text classifier trained on labelled sample reports';
+  if (m.startsWith('hybrid')) return 'Machine learning (Naive Bayes) with a rule-based safety check for life-threatening wording';
   if (m.startsWith('rules')) return m.includes('fallback') ? 'Keyword rules (used because the language model was unavailable)' : 'Keyword rules (baseline, not machine learning)';
   const [provider, model] = m.split(':');
   return `Language model: ${model} (${provider})`;

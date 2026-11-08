@@ -8,7 +8,8 @@
     "start": "node src/server.js",
     "seed": "node src/seed/seed.js",
     "test": "node --test",
-    "evaluate": "node evaluation/evaluate.js"
+    "evaluate": "node evaluation/evaluate.js",
+    "train": "node ml/train.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",
