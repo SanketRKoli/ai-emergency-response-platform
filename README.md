@@ -28,7 +28,6 @@ server/                      Express + MongoDB backend
   src/middleware/            auth.js (protect + authorize), error.js
   src/utils/                 constants, ApiError, asyncHandler, generateToken
   src/seed/seed.js           creates demo Admin and Responder accounts
-  uploads/                   incident images (created automatically, never committed)
   src/app.js, server.js      app setup and start-up
 client/                      React (Vite) + Bootstrap 5 frontend
   src/api/axios.js           API client (adds JWT automatically)
@@ -102,5 +101,18 @@ npm run dev                 # app on http://localhost:5173
 5. In MongoDB, open the users collection: `passwordHash` is a bcrypt hash, never the plain password.
 
 ## Automated checks
-- `cd server && npm test` runs 76 tests that need no database (validation, token rejection, role check, error handling).
+- `cd server && npm test` runs 78 tests that need no database (validation, token rejection, role check, error handling).
 - GitHub Actions (`.github/workflows/ci.yml`) runs the backend tests and the frontend build on every push and pull request.
+
+## Deployment (one public link)
+The server also serves the built React app, so one web service is enough. The database stays on MongoDB Atlas, and incident photos are stored in the database, so they survive restarts.
+
+**Render (free plan, no credit card):**
+1. Push this repository to GitHub. On render.com sign in with GitHub, click **New > Blueprint**, choose this repository, and approve `render.yaml`.
+2. When asked for `MONGO_URI`, paste the Atlas connection string from your local `server/.env`. `JWT_SECRET` is generated for you.
+3. Wait for the first build (about 5 minutes). Your link looks like `https://ai-emergency-response.onrender.com`.
+4. In Atlas, **Network Access** must contain `0.0.0.0/0` (hosting platforms use changing addresses).
+
+**Good to know:** the free plan sleeps after 15 idle minutes, and the first visit afterwards takes 30 to 60 seconds to wake up, so open the link a few minutes before a demo. The demo accounts (created by `npm run seed`) have known passwords; before sharing the link widely, change them with `npm run set-password -- admin@demo.test "NewPassword"` (run in `server`, it uses the same database).
+
+**Run the production build locally:** `npm run build` then `npm start` in the project root, with `server/.env` filled in, then open http://localhost:5000.

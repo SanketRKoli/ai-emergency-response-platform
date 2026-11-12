@@ -6,7 +6,7 @@ process.env.MONGO_URI = 'mongodb://127.0.0.1:27017/unused_in_these_tests';
 process.env.JWT_SECRET = 'test_secret_value';
 
 const { parseIncidentInput } = await import('../src/utils/incidentInput.js');
-const { hasImageSignature } = await import('../src/utils/imageCheck.js');
+const { hasImageSignature, detectImageType } = await import('../src/utils/imageCheck.js');
 const { formatReportId } = await import('../src/utils/reportId.js');
 
 test('input: description with typed location is accepted and cleaned', () => {
@@ -50,6 +50,12 @@ test('image signature: real JPEG and PNG headers pass, others fail', () => {
   assert.equal(hasImageSignature(Buffer.from('<html><script>alert(1)</script>')), false);
   assert.equal(hasImageSignature(Buffer.from('MZ\x90\x00')), false);
   assert.equal(hasImageSignature(Buffer.alloc(0)), false);
+});
+
+test('image type: decided from the file header, not the name', () => {
+  assert.equal(detectImageType(Buffer.from([0xff, 0xd8, 0xff, 0xe0, 0, 0, 0, 0])), 'image/jpeg');
+  assert.equal(detectImageType(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a])), 'image/png');
+  assert.equal(detectImageType(Buffer.from('GIF89a')), null);
 });
 
 test('report id format: INC-<year>-<4 digit number>', () => {

@@ -1,0 +1,22 @@
+# Render Blueprint: one free web service that serves the API and the React app on one link.
+services:
+  - type: web
+    name: ai-emergency-response
+    runtime: node
+    plan: free
+    buildCommand: npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: NODE_ENV
+        value: production
+      - key: AI_PROVIDER
+        value: hybrid
+      - key: JWT_EXPIRES_IN
+        value: 1d
+      - key: JWT_SECRET
+        generateValue: true
+      - key: MONGO_URI
+        sync: false   # paste your MongoDB Atlas connection string in the Render dashboard

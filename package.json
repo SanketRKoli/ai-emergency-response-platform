@@ -1,0 +1,12 @@
+{
+  "name": "ai-emergency-response-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI Emergency Response Platform: one service that serves the API and the built React app",
+  "scripts": {
+    "build": "npm --prefix client install --include=dev && npm --prefix client run build && npm --prefix server install",
+    "start": "node server/src/server.js",
+    "test": "npm --prefix server test"
+  },
+  "engines": { "node": ">=22" }
+}

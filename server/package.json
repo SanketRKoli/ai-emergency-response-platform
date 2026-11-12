@@ -9,7 +9,8 @@
     "seed": "node src/seed/seed.js",
     "test": "node --test",
     "evaluate": "node evaluation/evaluate.js",
-    "train": "node ml/train.js"
+    "train": "node ml/train.js",
+    "set-password": "node src/seed/setPassword.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",

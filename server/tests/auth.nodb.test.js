@@ -32,6 +32,13 @@ test('health check returns 200', async () => {
   assert.equal(r.body.success, true);
 });
 
+test('security headers: CSP allows the map tiles and photo previews and nothing else outside', async () => {
+  const csp = (await fetch(base + '/api/health')).headers.get('content-security-policy');
+  assert.match(csp, /img-src[^;]*tile\.openstreetmap\.org/);
+  assert.match(csp, /img-src[^;]*blob:/);
+  assert.match(csp, /default-src 'self'/);
+});
+
 test('unknown route returns 404 JSON', async () => {
   const r = await call('GET', '/api/nope');
   assert.equal(r.status, 404);

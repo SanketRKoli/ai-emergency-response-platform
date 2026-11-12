@@ -1,7 +1,6 @@
-import fs from 'node:fs/promises';
-import path from 'node:path';
 import mongoose from 'mongoose';
 import Incident from '../models/Incident.js';
+import Image from '../models/Image.js';
 import IncidentHistory from '../models/IncidentHistory.js';
 import Notification from '../models/Notification.js';
 import User from '../models/User.js';
@@ -9,9 +8,8 @@ import ApiError from '../utils/ApiError.js';
 import asyncHandler from '../utils/asyncHandler.js';
 import { ROLES } from '../utils/constants.js';
 import { parseIncidentInput } from '../utils/incidentInput.js';
-import { fileHasImageSignature } from '../utils/imageCheck.js';
+import { detectImageType } from '../utils/imageCheck.js';
 import { generateReportId } from '../utils/reportId.js';
-import { uploadsDir } from '../middleware/upload.js';
 import { processIncident } from '../services/incidentPipeline.js';
 
 const PENDING = ['Submitted', 'AI Analyzed', 'Pending Assignment', 'Assigned'];
@@ -69,13 +67,20 @@ async function loadAccessible(req) {
 // POST /api/incidents  (User) - multipart/form-data with optional file field "image"
 export const createIncident = asyncHandler(async (req, res) => {
   const file = req.file;
+  let imageId;
+  let created = false;
   try {
     const { errors, data } = parseIncidentInput(req.body);
     if (errors.length) throw new ApiError(400, 'Validation failed', errors);
-    if (file && !(await fileHasImageSignature(file.path))) throw new ApiError(415, 'The file is not a valid JPG or PNG image');
+    if (file) {
+      const contentType = detectImageType(file.buffer); // decided from the real file header, not from the name the browser sent
+      if (!contentType) throw new ApiError(415, 'The file is not a valid JPG or PNG image');
+      imageId = (await Image.create({ data: file.buffer, contentType, size: file.size }))._id;
+    }
 
     const reportId = await generateReportId();
-    const incident = await Incident.create({ ...data, reportId, userId: req.user._id, imageUrl: file?.filename });
+    const incident = await Incident.create({ ...data, reportId, userId: req.user._id, imageUrl: imageId ? String(imageId) : undefined });
+    created = true;
 
     // History and notification are secondary: the report is already saved, so a failure here must not lose it.
     try {
@@ -88,7 +93,7 @@ export const createIncident = asyncHandler(async (req, res) => {
     // The answer is already sent; AI analysis and routing continue in the background.
     setImmediate(() => processIncident(incident._id).catch((e) => console.error('processIncident failed:', e.message)));
   } catch (err) {
-    if (file) await fs.unlink(file.path).catch(() => {}); // do not keep files of rejected reports
+    if (imageId && !created) await Image.deleteOne({ _id: imageId }).catch(() => {}); // do not keep the photo of a report that was not saved
     throw err;
   }
 });
@@ -117,12 +122,12 @@ export const getIncident = asyncHandler(async (req, res) => {
   res.json({ success: true, incident: out });
 });
 
-// GET /api/incidents/:id/image  (same access rules; the file itself is never served publicly)
-export const getIncidentImage = asyncHandler(async (req, res, next) => {
+// GET /api/incidents/:id/image  (same access rules; the photo is never served publicly)
+export const getIncidentImage = asyncHandler(async (req, res) => {
   const incident = await loadAccessible(req);
-  if (!incident.imageUrl) throw new ApiError(404, 'This incident has no image');
-  const file = path.join(uploadsDir, path.basename(incident.imageUrl));
-  res.sendFile(file, { headers: { 'Cache-Control': 'private, max-age=3600' } }, (err) => {
-    if (err) next(new ApiError(404, 'Image file not found'));
-  });
+  if (!incident.imageUrl || !mongoose.isValidObjectId(incident.imageUrl)) throw new ApiError(404, 'No photo available for this incident');
+  const image = await Image.findById(incident.imageUrl);
+  if (!image) throw new ApiError(404, 'Photo not found');
+  res.set({ 'Content-Type': image.contentType, 'Cache-Control': 'private, max-age=3600' });
+  res.send(image.data);
 });

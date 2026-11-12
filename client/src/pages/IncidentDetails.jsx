@@ -45,7 +45,7 @@ export default function IncidentDetails() {
   useEffect(() => {
     if (!incident?.hasImage || imageUrl) return undefined;
     let url;
-    api.get(`/incidents/${id}/image`, { responseType: 'blob' }).then((res) => { url = URL.createObjectURL(res.data); setImageUrl(url); }).catch(() => {});
+    api.get(`/incidents/${id}/image`, { responseType: 'blob' }).then((res) => { url = URL.createObjectURL(res.data); setImageUrl(url); }).catch(() => setImageUrl('missing'));
     return () => { if (url) URL.revokeObjectURL(url); };
   }, [incident?.hasImage, id]);
 
@@ -113,7 +113,7 @@ export default function IncidentDetails() {
       {i.hasImage && (
         <div className="card shadow-sm mb-3"><div className="card-body">
           <div className="fw-semibold mb-2">Photo</div>
-          {imageUrl ? <img src={imageUrl} alt="Incident" className="img-fluid rounded border" style={{ maxHeight: 360 }} /> : <Loader text="Loading photo..." />}
+          {imageUrl === 'missing' ? <span className="text-secondary">The photo is no longer available.</span> : imageUrl ? <img src={imageUrl} alt="Incident" className="img-fluid rounded border" style={{ maxHeight: 360 }} /> : <Loader text="Loading photo..." />}
         </div></div>
       )}
 
